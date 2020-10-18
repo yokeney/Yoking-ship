@@ -10,7 +10,7 @@ export enum ButtonType {
     Danger = 'danger',
     Link = 'link',
 }
-interface BaseButtonProps {
+ interface BaseButtonProps {
     className?: string,
     disabled?: boolean,
     size?: ButtonSize,
