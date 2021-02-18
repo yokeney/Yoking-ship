@@ -12,7 +12,7 @@ const MenuItem:React.FC<MenuItemProps>=(props)=>{
     const context=useContext(MenuContext)
     console.log(context.index===index);
     
-    const classes=className('menu',className,{
+    const classes=className('menu-item',className,{
         'is-disabled':disabled,
         'is-active':context.index===index
     })

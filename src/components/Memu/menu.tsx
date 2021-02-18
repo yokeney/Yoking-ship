@@ -7,6 +7,7 @@ export interface MenuProps {
     classname?:string,
     mode?:MenuMode,
     style?:React.CSSProperties,
+    defaultOpenSubMenus?: string[],
     onSelect?:onSelectcallback
 }
 interface IMenuContext {
@@ -42,6 +43,6 @@ const Menu:FC<MenuProps>=(props)=>{
 }
 Menu.defaultProps={
     defaultIndex:0,
-    mode:"vertical"
+    mode:"horizonal"
 }
 export default Menu

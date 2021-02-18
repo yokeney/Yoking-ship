@@ -6,7 +6,7 @@ import MenuItem from './components/Memu/menuItem'
 function App() {
   return (
     <div className="App">
-      <Menu defaultIndex={0} onSelect={(index)=>{alert(index)}}>
+      <Menu defaultIndex={0}>
         <MenuItem index={0} >
           cook1
         </MenuItem>
