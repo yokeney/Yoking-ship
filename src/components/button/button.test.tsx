@@ -15,7 +15,7 @@ const disbledprops={
 }
 describe('test button component', () => {
     it('should render the correct the default button', () => {
-        const wrap = render(<Button {...defaultprops}>nice</Button>)
+        const wrap = render(<Button {...defaultprops}>nice</Button>) //render 渲染真实的dom节点进行断言
         const element = wrap.getByText('nice')
         expect(element).toBeTruthy()
         expect(element).toBeInTheDocument()
